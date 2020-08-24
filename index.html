@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Sayan's Sudoku</title>
+        <link rel="stylesheet" href="first.css" type="text/css"/>
+        <script type="text/javascript">
+        function fun1(){
+        if(document.getElementById("list1").checked)
+        document.getElementById("form").action="easy.html";
+        else if(document.getElementById("list2").checked)
+        document.getElementById("form").action="medium.html";
+        else
+        document.getElementById("form").action="hard.html";
+        }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return fun1()" id="form">
+        <div id="heading">
+            <p id="h1">SAYAN'S</p>
+            <p id="h2">SUDOKU</p>
+        </div>
+        <br>
+        <div id="game">
+        <button id="btn" type="submit">PLAY</button>
+        <p id="para"><i><b>Choose Dificulty Level</b></i></p>
+        <input class="list" id="list1" type="radio" name="select" checked>
+        <label>Easy</label>
+        <input class="list" id="list2" type="radio" name="select">
+        <label >Medium</label>
+        <input class="list" id="list3" type="radio" name="select">
+        <label>Hard</label>
+        </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:url(bg.png)
+}
+#container{
+    margin:auto;
+    background-image: url("9x9.png");
+    image-resolution: 500*500;
+    height:500px;
+    width:500px;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(9,55.5px);
+    grid-template-rows: repeat(9,55.5px);
+}
+input{
+    font-size:35px;
+    margin:8px 8px 8px 8px;
+    border:white;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+button{
+    width:150px;
+    height:70px;
+    border-radius: 20px;
+    background-color: turquoise;
+    box-shadow:4px 2px 4px black;
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:red;
+}
+#submit{
+    margin-left:37%;
+}
+#check{
+    margin-left:3%;
+}
+.boximg{
+    margin:auto;
+    width:50px;
+}
+.box{
+    display:none;
+    text-align: center;
+    font-weight: bold;
+}
+#timer{
+    background-color: lime;
+    width:150px;
+    font-size:35px;
+    text-align:center;
+    margin:auto;
+    font-weight:bold;
+    border-radius: 20px;
+    box-shadow: black 4px 4px 2px;
+}
+@media(max-width:600px)
+{
+    #container{
+        margin:auto;
+        background-image: url("9x91.png");
+        image-resolution: 300*300;
+        height:300px;
+        width:300px;
+        font-size: 25px;
+        color:white;
+        text-align: center;
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(9,33px);
+        grid-template-rows: repeat(9,33px);
+    }
+    input{
+        font-size:25px;
+        margin:4px 3px 3px 6px;
+        border:white;
+        background-color: black;
+        color:white;
+        text-align: center;
+    }
+    button{
+        width:75px;
+        height:50px;
+        border-radius: 20px;
+        background-color: turquoise;
+        box-shadow:4px 2px 4px black;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color:red;
+    }
+    #submit{
+        margin-left:32%;
+    }
+    #timer{
+        width:75px;
+        font-size:15px;
+    }
+}
